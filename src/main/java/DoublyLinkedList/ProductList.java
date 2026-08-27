@@ -184,7 +184,7 @@ public class ProductList {
             while (currentNode != null){
                 if(currentNode.data.Id == Id){
                     if(currentNode == head){
-                        deleteLastNode();
+                        deleteFirstNode();
                     } else if(currentNode == tail){
                         deleteLastNode();
                     } else {
