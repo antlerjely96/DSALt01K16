@@ -17,7 +17,7 @@ public class ProductList {
         } else {
             //Duyệt từ head -> tail
             Node currentNode = head;
-            while (currentNode.next != null){
+            while (currentNode != null){
                 System.out.println("ID: " + currentNode.data.Id + ", Name" + currentNode.data.Name + ", Quantity: " + currentNode.data.Quantity + ", Price: " + currentNode.data.Price);
                 //Dịch sang node tiếp theo
                 currentNode = currentNode.next;
@@ -33,7 +33,7 @@ public class ProductList {
         } else {
             //Duyệt từ tail -> head
             Node currentNode = tail;
-            while (currentNode.prev != null){
+            while (currentNode != null){
                 System.out.println("ID: " + currentNode.data.Id + ", Name" + currentNode.data.Name + ", Quantity: " + currentNode.data.Quantity + ", Price: " + currentNode.data.Price);
                 //Dịch về node phía trước
                 currentNode = currentNode.prev;
@@ -199,6 +199,7 @@ public class ProductList {
                     }
                 }
             }
+            currentNode = currentNode.next;
         }
     }
 
