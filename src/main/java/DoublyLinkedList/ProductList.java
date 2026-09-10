@@ -198,8 +198,8 @@ public class ProductList {
                         nextNode.prev = prevNode;
                     }
                 }
+                currentNode = currentNode.next;
             }
-            currentNode = currentNode.next;
         }
     }
 
